@@ -1,11 +1,13 @@
+#Thanks to Fletcher Nichol - https://github.com/fnichol
+
 Veewee::Definition.declare({
   :cpu_count => '1',
   :memory_size=> '256',
   :disk_size => '10140', :disk_format => 'VDI', :hostiocache => 'off',
-  :os_type_id => 'Debian',
-  :iso_file => "debian-7.4.0-i386-netinst.iso",
-  :iso_src => "http://cdimage.debian.org/cdimage/archive/7.4.0/i386/iso-cd/debian-7.4.0-i386-netinst.iso",
-  :iso_md5 => "7339b668a81b417ac023d73739dc6a03",
+  :os_type_id => 'Debian_64',
+  :iso_file => "debian-7.5.0-amd64-netinst.iso",
+  :iso_src => "http://cdimage.debian.org/debian-cd/7.5.0/amd64/iso-cd/debian-7.5.0-amd64-netinst.iso",
+  :iso_md5 => "8fdb6715228ea90faba58cb84644d296",
   :iso_download_timeout => "1000",
   :boot_wait => "10", :boot_cmd_sequence => [
      '<Esc>',
@@ -33,7 +35,7 @@ Veewee::Definition.declare({
   :ssh_key => "",
   :ssh_host_port => "7222",
   :ssh_guest_port => "22",
-  :sudo_cmd => "echo '%p'|sudo -S sh '%f'",
+  :sudo_cmd => "echo '%p'|sudo -S bash '%f'",
   :shutdown_cmd => "halt -p",
   :postinstall_files => [
     "base.sh",
