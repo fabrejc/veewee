@@ -4,7 +4,7 @@ Veewee::Session.declare({
   :disk_size => '15240',
   :disk_format => 'VDI',
   :hostiocache => 'off',
-  :os_type_id => 'Ubuntu',
+  :os_type_id => 'Ubuntu_64',
   :iso_file => "ubuntu-12.04.4-server-amd64.iso",
   :iso_src => "http://releases.ubuntu.com/12.04/ubuntu-12.04.4-server-amd64.iso",
   :iso_md5 => "e83adb9af4ec0a039e6a5c6e145a34de",
